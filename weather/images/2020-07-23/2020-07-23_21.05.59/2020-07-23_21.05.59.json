@@ -1,0 +1,14 @@
+{
+    "aos": 1595563559,
+    "duration": 909.652576,
+    "frequency": 137100000,
+    "link": "https://i.imgur.com/fEV9j5f.jpeg",
+    "los": 1595564469,
+    "max_elevation": 43.3,
+    "satellite": "METEOR-M 2",
+    "status": "PASSED",
+    "tca": 1595564012,
+    "aos_old": "2020-07-24 04:05:59.163129 UTC",
+    "los_old": "2020-07-24 04:21:08.815705 UTC",
+    "tca_old": "2020-07-24 04:13:31.719069 UTC"
+}

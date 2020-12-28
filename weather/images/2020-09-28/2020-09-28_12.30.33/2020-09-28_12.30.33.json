@@ -1,0 +1,24 @@
+{
+    "aos": 1601321433,
+    "azimuth_aos": 7.9,
+    "azimuth_los": 233.3,
+    "direction": "southbound",
+    "duration": 880,
+    "frequency": 137912500,
+    "links": {
+        "HVCT": "https://i.ibb.co/hyNgCn8/d7ffcdfc00fc.jpg",
+        "MSA": "https://i.ibb.co/tQ0cDxY/b759b8f11d21.jpg",
+        "MSA-precip": "https://i.ibb.co/YBHJnxC/6db8a0856199.jpg",
+        "a": "https://i.ibb.co/Cb5VSj4/9989c864e1f1.jpg",
+        "b": "https://i.ibb.co/LP3tMvR/bbf19aa10a9e.jpg",
+        "raw": "https://i.ibb.co/0j3NFw5/9ef2a2c5303e.jpg"
+    },
+    "los": 1601322313,
+    "main_image": "https://i.ibb.co/hyNgCn8/d7ffcdfc00fc.jpg",
+    "max_elevation": 27.8,
+    "satellite": "NOAA 18",
+    "status": "CURRENT",
+    "sun_elev": 37.5,
+    "tca": 1601321871,
+    "type": "NOAA"
+}

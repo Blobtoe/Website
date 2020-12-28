@@ -1,0 +1,21 @@
+{
+    "aos": 1593656962,
+    "duration": 918.333172,
+    "frequency": 137620000,
+    "links": {
+        "a": "https://i.imgur.com/NkubEAU.jpg",
+        "b": "https://i.imgur.com/GrIWtjT.jpg",
+        "msa": "",
+        "msa-precip": "",
+        "raw": "https://i.imgur.com/ZtYsGac.jpg"
+    },
+    "los": 1593657880,
+    "max_elevation": 79.0,
+    "satellite": "NOAA 15",
+    "status": "INCOMING",
+    "tca": 1593657418,
+    "aos_old": "2020-07-02 02:29:21.662785 UTC",
+    "los_old": "2020-07-02 02:44:39.995957 UTC",
+    "tca_old": "2020-07-02 02:36:58.064821 UTC",
+    "direction": "southbound"
+}

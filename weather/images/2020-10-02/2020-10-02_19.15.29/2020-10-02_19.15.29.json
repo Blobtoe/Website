@@ -1,0 +1,21 @@
+{
+    "aos": 1601691329,
+    "azimuth_aos": 132.3,
+    "azimuth_los": 352.4,
+    "direction": "southbound",
+    "duration": 869,
+    "frequency": 137100000,
+    "links": {
+        "ir": "https://i.ibb.co/9Ws23vg/2ca239203809.jpg",
+        "rgb122": "https://i.ibb.co/wMDN78Z/a7f29c134139.jpg",
+        "rgb122-precip": "https://i.ibb.co/chCsdZD/c909dcf6465e.jpg"
+    },
+    "los": 1601692197,
+    "main_image": "https://i.ibb.co/wMDN78Z/a7f29c134139.jpg",
+    "max_elevation": 31.5,
+    "satellite": "METEOR-M 2",
+    "status": "CURRENT",
+    "sun_elev": -6.4,
+    "tca": 1601691761,
+    "type": "METEOR"
+}

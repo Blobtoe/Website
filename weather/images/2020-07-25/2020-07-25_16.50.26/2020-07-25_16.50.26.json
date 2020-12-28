@@ -1,0 +1,16 @@
+{
+    "aos": 1595721027,
+    "duration": 825.153935,
+    "frequency": 137100000,
+    "los": 1595721852,
+    "max_elevation": 21.0,
+    "satellite": "NOAA 19",
+    "links": {},
+    "status": "PASSED",
+    "sun_elev": 37.4,
+    "tca": 1595721437,
+    "type": "NOAA",
+    "aos_old": "2020-07-25 23:50:26.872767 UTC",
+    "los_old": "2020-07-26 00:04:12.026702 UTC",
+    "tca_old": "2020-07-25 23:57:16.912360 UTC"
+}

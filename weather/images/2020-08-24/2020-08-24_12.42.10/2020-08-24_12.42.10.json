@@ -1,0 +1,25 @@
+{
+    "aos": 1598298131,
+    "duration": 834.221546,
+    "frequency": 137912500,
+    "links": {
+        "HVCT": "https://i.ibb.co/PmJmJzn/a30e7921d44d.jpg",
+        "MSA": "https://i.ibb.co/Z8rH3MB/a11c710b9595.jpg",
+        "MSA-precip": "https://i.ibb.co/9YWWVwX/c36af85f4398.jpg",
+        "a": "https://i.ibb.co/P9k0kWN/154ea7886adb.jpg",
+        "b": "https://i.ibb.co/3MpTS41/bc76a31d2f46.jpg",
+        "raw": "https://i.ibb.co/N3qvQNp/53661cd74f78.jpg"
+    },
+    "los": 1598298965,
+    "main_image": "https://i.ibb.co/PmJmJzn/a30e7921d44d.jpg",
+    "max_elevation": 22.2,
+    "satellite": "NOAA 18",
+    "status": "PASSED",
+    "sun_elev": 50.6,
+    "tca": 1598298546,
+    "type": "NOAA",
+    "aos_old": "2020-08-24 19:42:10.858187 UTC",
+    "los_old": "2020-08-24 19:56:05.079733 UTC",
+    "tca_old": "2020-08-24 19:49:06.446658 UTC",
+    "direction": "northbound"
+}

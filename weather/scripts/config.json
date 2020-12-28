@@ -1,0 +1,31 @@
+{
+    "general": {
+        "output_dir": "/home/pi/drive/weather/images"
+    },
+    "satellites": {
+        "NOAA 15": {
+            "priority": 0,
+            "create_images": ["a", "b", "MSA", "MSA-precip", "raw"],
+            "upload_to": ["imgbb", "discord"],
+            "min_elevation": 20
+        },
+        "NOAA 18": {
+            "priority": 0,
+            "create_images": ["a", "b", "MSA", "MSA-precip", "raw"],
+            "upload_to": ["imgbb", "discord"],
+            "min_elevation": 20
+        },
+        "NOAA 19": {
+            "priority": 0,
+            "create_images": ["a", "b", "MSA", "MSA-precip", "raw"],
+            "upload_to": ["imgbb", "discord"],
+            "min_elevation": 20
+        },
+        "METEOR-M 2": {
+            "priority": 90,
+            "create_images": ["rgb122", "ir", "precip"],
+            "upload_to": ["imgbb", "discord"],
+            "min_elevation": 20
+        }
+    }
+}

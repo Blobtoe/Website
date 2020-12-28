@@ -1,0 +1,15 @@
+{
+    "aos": 1605195046,
+    "azimuth_aos": 18.5,
+    "azimuth_los": 180.1,
+    "direction": "southbound",
+    "duration": 900,
+    "frequency": 137620000,
+    "los": 1605195946,
+    "max_elevation": 48.5,
+    "satellite": "NOAA 15",
+    "status": "CURRENT",
+    "sun_elev": 1.9,
+    "tca": 1605195498,
+    "type": "NOAA"
+}

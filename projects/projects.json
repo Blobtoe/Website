@@ -1,0 +1,12 @@
+[
+    {
+         "title": "",
+         "image": "",
+         "description": ""
+    },
+    {
+        "title": "Automatic Satellite Decoding Software",
+        "image": "",
+        "description": "This project is the backbone of my entire satellite receiving station. It ties together my QFH antenna, METEOR precipitation overlay software and website. It records signals from satellites received by my antenna, then decodes these signals into images. It then uploads the decoded images online, so instead of storing an image, I can just keep the URL of the image which saves lots of storage space in the long run. Now that the image is accessible from anywhere on the internet, it shares the images to discord and puts them on my website."
+   }
+]

@@ -1,0 +1,19 @@
+{
+    "aos": 1599451924,
+    "azimuth_aos": 189.0,
+    "azimuth_los": 339.6,
+    "direction": "southbound",
+    "duration": 893,
+    "frequency": 137100000,
+    "links": {
+        "rgb123": "https://i.ibb.co/0JBskYz/e4c789345c5e.jpg"
+    },
+    "los": 1599452817,
+    "main_image": "https://i.ibb.co/0JBskYz/e4c789345c5e.jpg",
+    "max_elevation": 35.9,
+    "satellite": "METEOR-M 2",
+    "status": "CURRENT",
+    "sun_elev": -15.3,
+    "tca": 1599452368,
+    "type": "METEOR"
+}

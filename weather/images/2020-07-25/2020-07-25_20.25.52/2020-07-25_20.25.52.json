@@ -1,0 +1,19 @@
+{
+    "aos": 1595733953,
+    "duration": 929.328907,
+    "frequency": 137100000,
+    "links": {
+        "rgb123": null
+    },
+    "los": 1595734882,
+    "main_image": "/home/pi/drive/weather/images/2020-07-25/2020-07-25_20.25.52/2020-07-25_20.25.52.rgb123.jpg",
+    "max_elevation": 87.5,
+    "satellite": "METEOR-M 2",
+    "status": "PASSED",
+    "sun_elev": 3.6,
+    "tca": 1595734415,
+    "type": "METEOR",
+    "aos_old": "2020-07-26 03:25:52.973582 UTC",
+    "los_old": "2020-07-26 03:41:22.302489 UTC",
+    "tca_old": "2020-07-26 03:33:35.115428 UTC"
+}

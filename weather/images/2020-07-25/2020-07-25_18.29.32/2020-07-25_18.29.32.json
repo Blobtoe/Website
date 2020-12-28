@@ -1,0 +1,25 @@
+{
+    "aos": 1595726973,
+    "duration": 945.42545,
+    "frequency": 137100000,
+    "links": {
+        "HVCT": null,
+        "MSA": null,
+        "MSA-precip": "https://i.imgur.com/kPR4Bm8.jpeg",
+        "a": null,
+        "b": null,
+        "raw": "https://i.imgur.com/tKBlgXj.jpg"
+    },
+    "main_image": "https://i.imgur.com/kPR4Bm8.jpeg",
+    "los": 1595727918,
+    "max_elevation": 79.7,
+    "satellite": "NOAA 19",
+    "status": "PASSED",
+    "sun_elev": 21.4,
+    "tca": 1595727440,
+    "type": "NOAA",
+    "aos_old": "2020-07-26 01:29:32.588674 UTC",
+    "los_old": "2020-07-26 01:45:18.014124 UTC",
+    "tca_old": "2020-07-26 01:37:20.480388 UTC",
+    "direction": "southbound"
+}

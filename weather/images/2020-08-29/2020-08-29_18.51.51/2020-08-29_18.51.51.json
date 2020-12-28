@@ -1,0 +1,12 @@
+{
+    "aos": "2020-08-30 01:51:51.057406 UTC",
+    "duration": 806.225338,
+    "frequency": 137100000,
+    "los": "2020-08-30 02:05:17.282744 UTC",
+    "max_elevation": 20.6,
+    "satellite": "METEOR-M 2",
+    "status": "CURRENT",
+    "sun_elev": 9.2,
+    "tca": "2020-08-30 01:58:32.656510 UTC",
+    "type": "METEOR"
+}

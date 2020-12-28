@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap"
+        rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="/media/global.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="/media/global.js"></script>
+    <script src="script.js"></script>
+    <title>Projects</title>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function() {
+            $(
+                "#menu ul li a[name='projects']"
+            ).css("background-color",
+                "#444444")
+            $("#title h1").html(
+                "Projects")
+        })
+    </script>
+
+    <div id="header">
+
+    </div>
+
+    <div id="main_content">
+
+
+        <div class="project_container">
+            <div class="image_container">
+                <img src="https://i.ibb.co/5RvKbRK/image.png" alt=""
+                    srcset="">
+            </div>
+            <div>
+                <h2>
+                    RECEIVING IMAGES FROM WEATHER SATELLITES
+                </h2>
+                <p>
+                    Using an <a href="https://www.rtl-sdr.com/about-rtl-sdr/">RTL-SDR</a>, a USB device that receives radio waves, I
+                    was able to receive and decode signals sent from the NOAA
+                    and METEOR weather satellites and produce images. I had to
+                    build a special antenna specifically tuned to the
+                    satellites' frequencies. After doing everything manually, I
+                    moved to automating the process. I wrote my own software to
+                    record and decode the satellites as they passed overhead,
+                    then post them on my website. I also made an app to decode
+                    images on my phone.
+                </p>
+            </div>
+        </div>
+
+
+
+        <div class="project_container">
+            <div class="image_container">
+                <img src="https://i.ibb.co/LRTQHYy/image.png" alt=""
+                    srcset="">
+            </div>
+            <div>
+                <h2>
+                    THIS WEBSITE
+                </h2>
+                <p>
+                    I built this website completely from scratch, meaning I
+                    wrote almost every line of code. It started a while ago when
+                    I purchased the <a href="https://felixperron.ca">felixperron.ca</a> domain name when I saw a
+                    cheap deal online. I didn't really have a use for it yet,
+                    but I hoped to use it to display what I had accomplished
+                    online. Now, not only is it serving its purpose, but I have
+                    learned many things making it. It can also be incorporated
+                    into my other projects to add a web aspect to them, like I
+                    did with my automated satellite receiving project.
+                </p>
+            </div>
+        </div>
+
+
+        <div class="project_container">
+            <div class="image_container">
+                <img src="https://i.ibb.co/gV9Yxkd/IMG-20201227-172925.jpg" alt=""
+                    srcset="">
+            </div>
+            <div>
+                <h2>
+                    SMART LIGHT
+                </h2>
+                <p>
+                    Using a 5v relay, I am able to control my desk lamp form my
+                    raspberry pi. This allowed me to control my light depending
+                    on some sensors and triggers. I connected a movement sensor
+                    to my raspberry pi, so it can automatically toggle my light
+                    depending on if there is movement in my room. Using python
+                    and <a href="https://flask.palletsprojects.com/">flask</a>, I setup a server which allows me to control my
+                    light by sending it a command via the internet. This allows
+                    me to toggle my light from my phone, or from google
+                    assistant.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

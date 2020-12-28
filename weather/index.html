@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-154161866-3"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-154161866-3');
+    </script>
+
+
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&amp;display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@600&amp;display=swap" rel="stylesheet" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="/media/global.css" rel="stylesheet" />
+    <script src="/media/global.js"></script>
+    <link href="./style.css" rel="stylesheet" />
+    <script src="./script.js"></script>
+    <script src="./showPass.js"></script>
+    <script src="./FilterPasses.js"></script>
+    <title>Weather</title>
+</head>
+
+<body>
+    <script>
+        $(document).ready(function () {
+            $("#menu ul li a[name='weather']").css("background-color", "#444444");
+            $("#title h1").html("Recent Weather Images")
+        })
+    </script>
+
+
+    <div id="header">
+    </div>
+
+
+    <div id="loading">
+        <h2>Loading...</h2>
+    </div>
+
+    <!-- Shows info about the next pass. Info is filled in automatically -->
+    <div id="next_pass" style="display: none;">
+        <h2 id="countdown"></h2>
+        <div>
+            <a id="all_passes_button" href="scripts/daily_passes.json">Today's Passes</a>
+        </div>
+        <div id="next_pass_info" style="display: none;">
+            <ul>
+                <li id="next_pass_sat"></li>
+                <li id="next_pass_max_elev"></li>
+                <li id="next_pass_frequency"></li>
+                <li id="next_pass_aos"></li>
+                <li id="next_pass_los"></li>
+            </ul>
+        </div>
+        <input type="button" value="More Info" id="next_pass_more_info_button" onclick="ToggleNextPassInfo()">
+    </div>
+
+
+    <div class="seperator" style="display:  none;"></div>
+
+
+    <div id="filter_passes_button">
+        <input type="button" value="Filter Passes" onclick="ShowFilterPopup()">
+    </div>
+
+    <div id="filter_passes_popup" style="display: none;">
+        <div id="filter_passes_popup_content">
+            <span id="close_popup">&times;</span>
+            <form action="javascript:;"  onsubmit="ApplyFilter()" id="filter_form">
+                <p>Satellite(s):</p>
+                <select id="filter_sat" oninput="AddSatToFilter(this)">
+                    <option></option>
+                    <option>NOAA 15</option>
+                    <option>NOAA 18</option>
+                    <option>NOAA 19</option>
+                    <option>METEOR-M 2</option>
+                </select>
+                <div id="sats_in_filter">
+                    
+                </div>
+                <p>Before Date:</p>
+                <input type="datetime-local" id="filter_before_date">
+                <p>After Date:</p>
+                <input type="datetime-local" id="filter_after_date">
+                <p>Minimum Elevation:</p>
+                <input type="number" id="filter_min_elev">
+                <p>Maximum Elevation:</p>
+                <input type="number" id="filter_max_elev">
+                <p>Minimum Sun Elevation:</p>
+                <input type="number" id="filter_min_sun">
+                <p>Maximum Sun Elevation:</p>
+                <input type="number" id="filter_max_sun">
+                <input type="submit" value="Apply" id="filter_apply">
+            </form>
+        </div>
+    </div>
+
+    <button onclick="ScrollToTop()" id="top_button">Back To Top</button>
+
+    <!-- Main container where all the passes will be added to -->
+    <div id="main_content" style="display: none;">
+        
+    </div>
+
+
+    <!-- Template for each pass. Info is filled in automatically when pass is shown -->
+    <template id="pass_template">
+        <div class="pass">
+            <div class="main_image_div">
+                <a class="main_image_link" href="">
+                    <img alt="" class="main_image" src="" srcset="" />
+                    
+                </a>
+                <p class="description"></p>
+            </div>
+            <div class="container">
+                <h1 class="pass_title"></h1>
+                <h3 class="delta_time">About </h3>
+                <div class="pass_info">
+                    <div class="NOAA">
+                        <ul>
+                            <h2>Pass Information</h2>
+                            <li class="sat"></li>
+                            <li class="max_elev"></li>
+                            <li class="frequency"></li>
+                            <li class="sun_elev"></li>
+                            <h2>Image Links</h2>
+                            <ul class="links">
+                                <li><a class="a" href="">Visible Light</a></li>
+                                <li><a class="b" href="">Infrared</a></li>
+                                <li><a class="HVCT" href="">HVCT false colour</a></li>
+                                <li><a class="MSA" href="">MSA false colour</a></li>
+                                <li><a class="MSA-precip" href="">MSA false colour with precipitation</a></li>
+                                <li><a class="raw" href="">Raw image</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                    <div class="METEOR">
+                        <ul>
+                            <h2>Pass Information</h2>
+                            <li class="sat"></li>
+                            <li class="max_elev"></li>
+                            <li class="frequency"></li>
+                            <li class="sun_elev"></li>
+                            <h2>Image Links</h2>
+                            <ul class="links">
+                                <li><a class="rgb123" href="" style="display: none;">RGB false colour (123)</a></li>
+                                <li><a class="rgb122" href="" style="display: none;">RGB false colour  (122)</a></li>
+                                <li><a class="rgb122-precip" href="" style="display: none;">RGB false colour (122) with precipitation</a></li>
+                                <li><a class="ir-precip" href="" style="display: none;">Infrared with precipitation</a></li>
+                                <li><a class="ir" href="" style="display: none;">Infrared</a></li>
+                            </ul>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="seperator"></div>
+    </template>
+
+    <div id="filter_sat_template" style="display: none;">
+        <div>
+            <span class="filter_sat_name"></span>
+            <span onclick="RemoveSatFromFilter(this)">&times;</span>
+        </div>
+    </div>
+
+
+    
+
+
+    <div id="footer_div" style="display: none;"></div>
+</body>
+
+</html>

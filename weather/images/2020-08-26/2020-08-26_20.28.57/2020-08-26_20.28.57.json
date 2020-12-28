@@ -1,0 +1,16 @@
+{
+    "aos": 1598498938,
+    "duration": 848.93693,
+    "frequency": 137912500,
+    "los": 1598499787,
+    "max_elevation": 25.1,
+    "satellite": "NOAA 18",
+    "status": "PASSED",
+    "sun_elev": -4.8,
+    "tca": 1598499360,
+    "type": "NOAA",
+    "aos_old": "2020-08-27 03:28:57.727341 UTC",
+    "los_old": "2020-08-27 03:43:06.664271 UTC",
+    "tca_old": "2020-08-27 03:36:00.419787 UTC",
+    "direction": "southbound"
+}

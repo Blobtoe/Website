@@ -1,0 +1,19 @@
+{
+    "aos": 1598064575,
+    "duration": 907.634093,
+    "frequency": 137100000,
+    "links": {
+        "rgb123": "https://i.ibb.co/37vQqMf/846a193de277.jpg"
+    },
+    "los": 1598065483,
+    "main_image": "https://i.ibb.co/37vQqMf/846a193de277.jpg",
+    "max_elevation": 51.9,
+    "satellite": "METEOR-M 2",
+    "status": "PASSED",
+    "sun_elev": 2.5,
+    "tca": 1598065027,
+    "type": "METEOR",
+    "aos_old": "2020-08-22 02:49:35.122315 UTC",
+    "los_old": "2020-08-22 03:04:42.756408 UTC",
+    "tca_old": "2020-08-22 02:57:07.173536 UTC"
+}
